@@ -1,4 +1,5 @@
 import { ArrowDown, ArrowUpRight } from 'lucide-react'
+import { BrandMark } from '../components/BrandMark'
 
 export function Hero() {
   return (
@@ -18,7 +19,7 @@ export function Hero() {
         <div className="hero-art" aria-hidden="true">
           <div className="hero-art-label">IDEIAS EM MOVIMENTO <span>JSE / 01</span></div>
           <div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit orbit-three" />
-          <div className="art-core"><span>J</span><i /></div>
+          <div className="art-core"><BrandMark /></div>
           <div className="art-cross cross-a" /><div className="art-cross cross-b" />
           <div className="art-caption">Estratégia<br />+ ação</div>
           <div className="hero-art-bottom"><span>01 — 04</span><span>CLAREZA PARA AVANÇAR</span></div>
