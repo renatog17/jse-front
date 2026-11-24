@@ -61,3 +61,6 @@
 .footer-channels{display:flex;gap:14px;font-size:11px;color:#b6c0ca}
 .footer-channels a:hover{color:var(--coral)}
 @media(max-width:640px){.footer-end{width:100%;justify-content:space-between}.footer-channels{flex-wrap:wrap}}
+.hero-art-bottom>span:only-child{margin-left:auto}
+.hero-art-bottom .art-caption{position:static;right:auto;bottom:auto;text-align:right;font-size:12px;line-height:1.5;color:#c1c9d2}
+@media(max-width:640px){.hero-art-bottom .art-caption{font-size:10px}}

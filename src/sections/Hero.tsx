@@ -21,8 +21,7 @@ export function Hero() {
           <div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit orbit-three" />
           <div className="art-core"><BrandMark /></div>
           <div className="art-cross cross-a" /><div className="art-cross cross-b" />
-          <div className="art-caption">Estratégia<br />+ ação</div>
-          <div className="hero-art-bottom"><span>01 — 04</span><span>CLAREZA PARA AVANÇAR</span></div>
+          <div className="hero-art-bottom"><span className="art-caption">Estratégia<br />+ ação</span></div>
         </div>
       </div>
       <a className="scroll-cue wrap" href="#solucoes"><span>Role para descobrir</span><ArrowDown size={15} /></a>
