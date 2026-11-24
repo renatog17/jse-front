@@ -20,7 +20,7 @@ export function Hero() {
           <div className="hero-art-label">IDEIAS EM MOVIMENTO <span>JSE / 01</span></div>
           <div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit orbit-three" />
           <div className="art-core"><BrandMark /></div>
-          <div className="art-cross cross-a" /><div className="art-cross cross-b" />
+          <div className="art-node node-a" /><div className="art-node node-b" />
           <div className="hero-art-bottom"><span className="art-caption">Estratégia<br />+ ação</span></div>
         </div>
       </div>
