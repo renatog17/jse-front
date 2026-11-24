@@ -1,10 +1,11 @@
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, BookOpen, BriefcaseBusiness, Calculator, Cpu } from 'lucide-react'
 import { Reveal } from '../components/Reveal'
 
 const areas = [
-  { number: '01', title: 'Estratégia & gestão', description: 'Organização e direcionamento para apoiar decisões mais claras no dia a dia do negócio.' },
-  { number: '02', title: 'Processos & eficiência', description: 'Um olhar atento para rotinas, oportunidades de melhoria e formas de trabalhar melhor.' },
-  { number: '03', title: 'Tecnologia & inovação', description: 'Uso consciente da tecnologia para responder a necessidades reais da empresa.' },
+  { number: '01', title: 'Contabilidade e tributação', description: 'Serviços contábeis, fiscais e tributários, planejamento e orientação para decisões mais seguras.', icon: Calculator, id: 'contabilidade' },
+  { number: '02', title: 'Gestão e regularização empresarial', description: 'Abertura, alteração e encerramento de empresas, regularização, consultoria e soluções de gestão.', icon: BriefcaseBusiness, id: 'gestao' },
+  { number: '03', title: 'Tecnologia e inovação', description: 'Sistemas, automação, otimização de processos e soluções digitais personalizadas.', icon: Cpu, id: 'tecnologia' },
+  { number: '04', title: 'Educação empresarial', description: 'Palestras, cursos, treinamentos, disseminação de conhecimento e capacitação empresarial.', icon: BookOpen, id: 'educacao' },
 ]
 
 export function Solutions() {
@@ -12,12 +13,11 @@ export function Solutions() {
     <section className="section solutions" id="solucoes">
       <div className="wrap">
         <Reveal><div className="section-head"><p className="eyebrow"><span className="eyebrow-line" /> O que fazemos</p><span className="section-index">01 / SOLUÇÕES</span></div></Reveal>
-        <Reveal><h2 className="section-title">Desafios diferentes.<br /><em>Caminhos feitos em conjunto.</em></h2></Reveal>
-        <Reveal><p className="section-intro">Cada negócio tem seu contexto. A JSE aproxima pessoas, conhecimento e ferramentas para construir respostas que façam sentido.</p></Reveal>
+        <Reveal><h2 className="section-title">Soluções que conectam.<br /><em>Competências que se complementam.</em></h2></Reveal>
+        <Reveal><p className="section-intro">Contabilidade, gestão, tecnologia e educação empresarial em frentes integradas, com atenção ao contexto de cada negócio.</p></Reveal>
         <div className="solutions-list">
-          {areas.map((area, index) => <Reveal key={area.number} delay={index * 90}><article className="solution-row"><span className="solution-number">{area.number}</span><h3>{area.title}<small>Área em definição</small></h3><p>{area.description}</p><span className="solution-icon" aria-hidden="true"><ArrowUpRight size={19} /></span></article></Reveal>)}
+          {areas.map((area, index) => <Reveal key={area.number} delay={index * 90}><article className="solution-row" id={area.id}><span className="solution-number">{area.number}</span><div className="solution-title"><span className="solution-icon" aria-hidden="true"><area.icon size={19} /></span><h3>{area.title}</h3></div><p>{area.description}</p><span className="solution-arrow" aria-hidden="true"><ArrowUpRight size={19} /></span></article></Reveal>)}
         </div>
-        <p className="provisional-note">As áreas acima são categorias iniciais de apresentação e serão ajustadas conforme o portfólio da JSE for definido.</p>
       </div>
     </section>
   )

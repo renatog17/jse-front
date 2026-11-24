@@ -1,0 +1,17 @@
+services:
+  jse-web:
+    image: jse-web:1.0.0
+    container_name: jse-web
+    restart: unless-stopped
+    networks:
+      - proxy-network
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+
+networks:
+  proxy-network:
+    external: true
